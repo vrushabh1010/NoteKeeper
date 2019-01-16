@@ -59,7 +59,8 @@ public class NoteActivity extends AppCompatActivity {
 
     private void restoreOriginalNoteValues(Bundle savedInstanceState) {
         mOriginalNoteCourseId = savedInstanceState.getString(ORIGINAL_NOTE_COURSE_ID);
-        mOriginalNoteTitle = savedInstanceState.getString();
+        mOriginalNoteTitle = savedInstanceState.getString(ORIGINAL_NOTE_TITLE);
+        mOriginalNoteText = savedInstanceState.getString(ORIGINAL_NOTE_TEXT);
     }
 
     private void saveOriginalNoteValues() {
